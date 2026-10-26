@@ -63,7 +63,7 @@ function calcBMI() {
 
   let label, color, pct;
   if (bmi < 18.5) {
-    label = "You're underweight — eat up, bhai!";
+    label = "You're underweight — eat up bro!";
     color = "#378ADD";
     pct = Math.max(2, (bmi / 18.5) * 22);
   } else if (bmi <= 24.9) {
@@ -75,7 +75,7 @@ function calcBMI() {
     color = "#EF9F27";
     pct = 50 + ((bmi - 25) / 4.9) * 25;
   } else {
-    label = "High BMI — time to act";
+    label = "You're a dead man!!!";
     color = "#E24B4A";
     pct = Math.min(97, 75 + ((bmi - 30) / 10) * 22);
   }
